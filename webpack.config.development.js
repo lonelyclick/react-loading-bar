@@ -7,7 +7,7 @@ const deployLocation = 'examples'
 
 module.exports = {
   entry: {
-    Toast: './examples/src/Loading.jsx'
+    index: './examples/src/Loading.jsx'
   },
   color: true,
   progress: true,
