@@ -3,15 +3,16 @@
 ## Usage
 
 ```
-  npm install react-loading-bar
+  npm install react-loading-bar --save
 ```
 
 
 ```
-import React from 'react'
+import React, { Component } from 'react'
+import Loading from 'react-loading-bar'
 import 'react-loading-bar/dist/index.css'
 
-export default class ToastExample extends Component {
+export default class LoadingExample extends Component {
   state = {
     show: false
   }

@@ -4,9 +4,7 @@ import ReactDOM from 'react-dom'
 import Loading from '../../dist/index'
 import styles from './Example.css'
 
-console.log(Loading);
-
-class ToastExample extends Component {
+class LoadingExample extends Component {
     state = {
       show: false
     }
@@ -44,4 +42,4 @@ class ToastExample extends Component {
     }
 }
 
-ReactDOM.render(<ToastExample />, document.getElementById('loadingbar'))
+ReactDOM.render(<LoadingExample />, document.getElementById('loadingbar'))

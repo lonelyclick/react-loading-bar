@@ -8,9 +8,7 @@ const deployLocation = 'dist'
 
 module.exports = {
   entry: {
-    // Loading: './src/loading/Loading.jsx',
     index: './src/index.js'
-    // Toast: './src/toast/Toast.jsx'
   },
   colors: true,
   resolve: {
@@ -19,7 +17,7 @@ module.exports = {
   output: {
     filename: '/[name].js',
     path: path.join(__dirname, deployLocation),
-    library: 'zhihuReactComponent',
+    library: 'ReactLoadingBar',
     libraryTarget: 'umd'
   },
   externals: {

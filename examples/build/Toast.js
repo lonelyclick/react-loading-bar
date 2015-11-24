@@ -72,17 +72,15 @@
 
 	var _ExampleCss2 = _interopRequireDefault(_ExampleCss);
 
-	console.log(_distIndex2['default']);
+	var LoadingExample = (function (_Component) {
+	  _inherits(LoadingExample, _Component);
 
-	var ToastExample = (function (_Component) {
-	  _inherits(ToastExample, _Component);
-
-	  function ToastExample() {
+	  function LoadingExample() {
 	    var _this = this;
 
-	    _classCallCheck(this, ToastExample);
+	    _classCallCheck(this, LoadingExample);
 
-	    _get(Object.getPrototypeOf(ToastExample.prototype), 'constructor', this).apply(this, arguments);
+	    _get(Object.getPrototypeOf(LoadingExample.prototype), 'constructor', this).apply(this, arguments);
 
 	    this.state = {
 	      show: false
@@ -97,7 +95,7 @@
 	    };
 	  }
 
-	  _createClass(ToastExample, [{
+	  _createClass(LoadingExample, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2['default'].createElement(
@@ -125,10 +123,10 @@
 	    }
 	  }]);
 
-	  return ToastExample;
+	  return LoadingExample;
 	})(_react.Component);
 
-	_reactDom2['default'].render(_react2['default'].createElement(ToastExample, null), document.getElementById('loadingbar'));
+	_reactDom2['default'].render(_react2['default'].createElement(LoadingExample, null), document.getElementById('loadingbar'));
 
 /***/ },
 /* 1 */
@@ -19721,7 +19719,7 @@
 	'use strict';
 
 	(function webpackUniversalModuleDefinition(root, factory) {
-		if (true) module.exports = factory(__webpack_require__(1));else if (typeof define === 'function' && define.amd) define(["react"], factory);else if (typeof exports === 'object') exports["zhihuReactComponent"] = factory(require("react"));else root["zhihuReactComponent"] = factory(root["React"]);
+		if (true) module.exports = factory(__webpack_require__(1));else if (typeof define === 'function' && define.amd) define(["react"], factory);else if (typeof exports === 'object') exports["ReactLoadingBar"] = factory(require("react"));else root["ReactLoadingBar"] = factory(root["React"]);
 	})(undefined, function (__WEBPACK_EXTERNAL_MODULE_2__) {
 		return (/******/(function (modules) {
 				// webpackBootstrap

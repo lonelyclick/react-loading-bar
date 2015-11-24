@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define(["react"], factory);
 	else if(typeof exports === 'object')
-		exports["zhihuReactComponent"] = factory(require("react"));
+		exports["ReactLoadingBar"] = factory(require("react"));
 	else
-		root["zhihuReactComponent"] = factory(root["React"]);
+		root["ReactLoadingBar"] = factory(root["React"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_2__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache

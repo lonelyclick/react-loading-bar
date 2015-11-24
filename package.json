@@ -1,7 +1,7 @@
 {
   "name": "react-loading-bar",
-  "version": "0.0.1",
-  "description": "## Usage",
+  "version": "0.0.2",
+  "description": "react loading bar",
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack --config webpack.config.development.js --watch",
@@ -11,12 +11,16 @@
   "files": [
     "dist/"
   ],
-  "author": "zhihu",
+  "author": "lonelyclick",
   "license": "MIT",
   "dependencies": {
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "shallowequal": "^0.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lonelyclick/react-loading-bar.git"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
