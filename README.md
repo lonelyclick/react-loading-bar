@@ -54,6 +54,8 @@ export default class LoadingExample extends Component {
 
 ## Demo
 
+[React Loading Bar Example](http://lonelyclick.github.io/examples/loadingbar.html "react-loading-bar")
+
 ## Option Change
 
 ```
