@@ -1,9 +1,20 @@
 module.exports = function(config) {
+  const coverageReporters = [
+    { type: 'text-summary' },
+    { type: 'html', subdir: 'coverage' }
+  ]
+  const reporters = ['spec', 'coverage']
+
+  if (config.singleRun) {
+    coverageReporters.push({ type: 'lcov', dir: 'coverage/' })
+    reporters.push('coveralls')
+  }
+
   config.set({
     browsers: ['PhantomJS'],
     coverageReporter: {
-      type: 'lcov',
-      dir: 'coverage/'
+      dir: 'build',
+      reporters: coverageReporters
     },
     files: [
       'tests.webpack.js'
@@ -18,12 +29,13 @@ module.exports = function(config) {
       'karma-phantomjs-launcher',
       'karma-webpack',
       'karma-phantomjs-shim',
-      'karma-spec-reporter'
+      'karma-spec-reporter',
+      'karma-coveralls'
     ],
     preprocessors: {
       'tests.webpack.js': ['webpack']
     },
-    reporters: ['spec', 'coverage', 'coveralls'],
+    reporters,
     webpack: {
       module: {
         preLoaders: [
@@ -36,22 +48,7 @@ module.exports = function(config) {
             test: /\.js$/,
             include: /(src)/,
             loaders: ['isparta']
-          }
-          //
-          // {
-          //           test: /\.js$/,
-          //           include: path.resolve('src/components/'),
-          //           loader: 'istanbul-instrumenter'
-          //       }
-        ],
-        loaders: [
-          // {
-          //   test: /\.(js|jsx)$/,
-          //   include: /(src|node_modules)/,
-          //   loaders: [
-          //     'babel?stage=0'
-          //   ]
-          // },
+          },
           {
             test: /\.css$/,
             /* eslint-disable max-len */
