@@ -6,21 +6,20 @@ const route = require('koa-route')
 const fs = require('fs')
 const staticCache = require('koa-static-cache')
 const mount = require('koa-mount')
-const app = new koa()
+const Koa = require('koa')
+const app = new Koa()
 
 const backendPort = 3000
 let deploy = 'examples'
 
-app.use(logger())
+app.use(async (ctx, next) => {
+  const start = new Date
+  await next()
+  const ms = new Date - start
+  console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
+})
 
 app.use(mount('/', staticCache(__dirname)))
-
-app.use(route.get('*', function* () {
-  this.type = 'html'
-  this.body = yield function (done) {
-    fs.readFile(`${deploy}/build/index.html`, 'utf8', done)
-  }
-}))
 
 app.listen(backendPort, function () {
   /* eslint-disable no-console */
