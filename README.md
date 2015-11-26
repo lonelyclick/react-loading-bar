@@ -1,7 +1,9 @@
 # React Loading Bar
 
+[![npm version](https://badge.fury.io/js/react-loading-bar.svg)](https://badge.fury.io/js/react-loading-bar)
+[![Dependency Status](https://www.versioneye.com/user/projects/5656dc74ff016c002c001c69/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5656dc74ff016c002c001c69)
 [![Build Status](https://travis-ci.org/lonelyclick/react-loading-bar.svg?branch=master)](https://travis-ci.org/lonelyclick/react-loading-bar)
-[![Coverage Status](https://coveralls.io/repos/lonelyclick/react-loading-bar/badge.svg?branch=master&service=github)](https://coveralls.io/github/lonelyclick/react-loading-bar?branch=master)
+[![Coverage Status](https://coveralls.io/repos/lonelyclick/react-loading-bar/badge.svg?branch=test&service=github)](https://coveralls.io/github/lonelyclick/react-loading-bar?branch=test)
 
 ## Usage
 

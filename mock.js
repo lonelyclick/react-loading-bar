@@ -6,7 +6,7 @@ const route = require('koa-route')
 const fs = require('fs')
 const staticCache = require('koa-static-cache')
 const mount = require('koa-mount')
-const app = koa()
+const app = new koa()
 
 const backendPort = 3000
 let deploy = 'examples'
