@@ -1,6 +1,7 @@
 # React Loading Bar
 
 [![Build Status](https://travis-ci.org/lonelyclick/react-loading-bar.svg?branch=master)](https://travis-ci.org/lonelyclick/react-loading-bar)
+[![Coverage Status](https://coveralls.io/repos/lonelyclick/react-loading-bar/badge.svg?branch=master&service=github)](https://coveralls.io/github/lonelyclick/react-loading-bar?branch=master)
 
 ## Usage
 

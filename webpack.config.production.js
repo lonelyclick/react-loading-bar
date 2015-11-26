@@ -8,14 +8,14 @@ const deployLocation = 'dist'
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/Loading.js'
   },
   colors: true,
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
   output: {
-    filename: '/[name].js',
+    filename: '/index.js',
     path: path.join(__dirname, deployLocation),
     library: 'ReactLoadingBar',
     libraryTarget: 'umd'
@@ -37,10 +37,10 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/, exclude: /node_modules/, loader: 'babel?stage=0'
+        test: /\.js$/, exclude: /node_modules/, loader: 'babel'
       },
       {
-        test: /\.jsx$/, exclude: /node_modules/, loader: 'babel?stage=0'
+        test: /\.jsx$/, exclude: /node_modules/, loader: 'babel'
       },
       {
         test: /\.css$/,

@@ -14,6 +14,10 @@ export default class Loading extends Component {
     change: true
   }
 
+  constructor() {
+    super()
+  }
+
   state = {
     size: 0,
     disappearDelayHide: false, // when dispappear, first transition then display none

@@ -82,6 +82,12 @@
   ],
   "globals": {
     "Highcharts": false,
-    "module": false
+    "describe": false,
+    "it": false,
+    "xdescribe": false,
+    "xit": false,
+    "expect": false,
+    "jasmine": false,
+    "beforeEach": false
   }
 }
