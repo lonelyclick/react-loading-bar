@@ -65,6 +65,7 @@ Support UMD
   show={true}
   color="red"
   change={false}
+  showSpinner={true}
 />
 ```
 

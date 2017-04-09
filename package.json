@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack --config webpack.config.development.js --watch",
     "build": "webpack --config webpack.config.production.js",
-    "eslint": "webpack --config webpack.config.development.js --enable-eslint"
+    "eslint": "eslint src/*.jsx",
+    "lintfix": "eslint --fix src/*.jsx"
   },
   "files": [
     "dist/"
