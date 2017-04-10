@@ -6,12 +6,15 @@ import styles from './Loading.css'
 
 export default class Loading extends Component {
   static propTypes = {
+    change: PropTypes.bool,
     color: PropTypes.string.isRequired,
-    show: PropTypes.bool
+    show: PropTypes.bool,
+    showSpinner: PropTypes.bool
   }
 
   static defaultProps = {
-    change: true
+    change: true,
+    showSpinner: true
   }
 
   state = {
@@ -132,12 +135,14 @@ export default class Loading extends Component {
             <div className={styles.peg}></div>
           </div>
         </div>
-        <div className={styles.spinner}>
-          <div
-            className={styles.icon}
-            style={this.getSpinnerStyle()}
-          />
-        </div>
+        {this.props.showSpinner &&
+          <div className={styles.spinner}>
+            <div
+              className={styles.icon}
+              style={this.getSpinnerStyle()}
+            />
+          </div>
+        }
       </div>
     )
   }
