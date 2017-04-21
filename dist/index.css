@@ -1,7 +1,7 @@
 .Loading__loading___1m_fZ {
   pointer-events: none;
   -webkit-transition: 400ms linear all;
-          transition: 400ms linear all;
+  transition: 400ms linear all;
 }
 
 .Loading__bar___21yOt {
@@ -15,7 +15,7 @@
   background: #29d;
   border-radius: 0 1px 1px 0;
   -webkit-transition: width 350ms;
-          transition: width 350ms;
+  transition: width 350ms;
 }
 
 .Loading__peg___3Y_28 {
@@ -36,7 +36,7 @@
   z-index: 10002;
   pointer-events: none;
   -webkit-transition: 350ms linear all;
-          transition: 350ms linear all;
+  transition: 350ms linear all;
 }
 
 .Loading__icon___3OOyu {
