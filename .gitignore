@@ -1,2 +1,4 @@
 node_modules
 examples/build
+npm-debug.log
+package-lock.json
