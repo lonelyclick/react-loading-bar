@@ -24,12 +24,13 @@ export default class Loading extends Component {
     appearDelayWidth: 0 // when appear, first display block then transition width
   }
 
-  componentWillReceiveProps(nextProps) {
-    const { show, change } = nextProps
+  componentDidUpdate(prevProps) {
+    const { show, change } = this.props
 
-    if (!change) {
+    if (!change || prevProps.show === show) {
       return
     }
+
     if (show) {
       this.show()
     } else {
